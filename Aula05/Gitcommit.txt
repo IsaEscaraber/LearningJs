@@ -1,0 +1,8 @@
+git add .  // this is for me to add everything
+git commit  // to comment
+write what I did // here I can write and nominate what I did in the project
+Ctrl + S and close the file // I need to save and close for to loading below in terminal
+git push origin main // the last part, after that my commi will be avaliable in my GitHub profile
+
+
+
