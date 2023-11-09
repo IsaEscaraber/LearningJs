@@ -1,0 +1,31 @@
+Modulo A - knowing Js
+
+  - CCS: Disegn da pagina, parte visual e artistica, formatos e cores.
+  - HTML: Texto e imagens, tamanho de titulos e fontes, paragrafos e linhas.
+  - JS: Stack, tras funcionalidade e movimento ao site. Nomear e definir objetos.
+
+Comando: Ctrl + L = limpar console.
+Span: Caracter que pode ser adicionado no codigo.
+
+EcmaScript é o Js padronizado.
+
+Para desenvolver um Software é preciso:
+
+  - Navegador
+  - Visual Studio Code
+
+ Node Js é uma stack usada no back-end
+
+ Javascript Website
+  - Google
+  - Youtube
+ 
+Client: Focuses on user interaction, graphical interface, and sends requests.
+Server: Manages business logic, processes requests, stores and retrieves data.
+
+Aula 04
+
+ - window.alert() é usado para inserir um pop up na tela escrito algo com um botão para selecionar
+ - window.confirm() é usado para inserir um pop up na tela com duas opções para selecionar
+ - window. prompt() é usado para inserir um pop up com um box para escrever algo
+
