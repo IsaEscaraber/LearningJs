@@ -23,20 +23,25 @@
     <p>Ja me livrei da maldição</p>
     <span> ***** </span>
     <script>
+      //IN THIS CASE IS NECESSARY TO CONVERT STRING TO NUMBER
       //var n1 = Number = parseInt(window.prompt("Digite um numero: ")); PARA NUMEROS INTEIROS
       //var n2 = Number = parseInt(window.prompt("Digite outro número: "));PARA NUMEROS INTEIROS
       //var n1 = Number = parseFloat(window.prompt("Digite um numero: ")); PARA NUMEROS REAIS
       //var n2 = Number = parseFloat(window.prompt("Digite outro número: ")); PARA NUMEROS REAIS
-      var n1 = Number(window.prompt("Digite um numero: ")); // SIMPLIFICADO PARA OS DOIS APENAS NUMBER
-      var n2 = Number(window.prompt("Digite outro número: "));
+      //var n = Number; PARA DEIXAR O JS DECIDIR
+      var n1 = Number(window.prompt("Type a number: ")); // SIMPLIFICADO PARA OS DOIS APENAS NUMBER
+      var n2 = Number(window.prompt("Type another one: "));
       var s = n1 + n2;
-      // (string + string) stand side by side - adicionar lado a lado
+      // (string + string) stand side by side - concatenação
+      // (number + number) addition result - Adição
       //Number.parseInt(n) - Numeros inteiros Number.parseFloat(n) - Numero real
       //
-      window.alert(`A some do ${n1} entre ${n2} é igual ao ${s}`);
+      window.alert(`The sum between ${n1} and ${n2} is equal ${s}`);
 
-      //window.alert("A some dos valores é " + s); //s.toString ou String(s) para retornar String
+      //window.alert("A some dos valores é " + s);
+      //s.toString ou String(s) para CONVERTER PARA String
       // + para soma e para concatenação (adicionar ao lado)
+      //windows prompt sempre retorna string, mesmo sendo number (caracterisca do command)
     </script>
   </body>
 </html>

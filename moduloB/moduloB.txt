@@ -20,7 +20,22 @@ Modulo B - Basic commands of Js
 
   >> IDENTIFICADORES 
 
-  -letra, $ ou _
+  - Can start with letra, $ ou _
+  - Can not start with number
+  - Can used letters and number
+  - Can used symbol and acentos
+  - Can not have number
+  - Can not be reserve words, like var, script e etc.
+
+  number = somente numbers, comma and dot
+  string = cadeia de caracteres
+  boolean = true and false
+
+   >> Others identificadores
+  null
+  undefined
+  object
+  function
 
   >> FORMATO DE STRINGS
 
@@ -33,5 +48,8 @@ s.toUppperCase()  //muda tudo para letra mauscula
 s.toLowerCase()  //tudo para 'minuscula'
 E da para fazer muitos outros
 
+>> Numbers formated
+
 n1.toFixed(2).replace('.',',') // usado para alterar casas decimais e trocar ponto por virgula.
 n1.toFixed(4) // usado para alteração as casas decimais
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // we can change just the currency BRL, EUR, USD etc.
