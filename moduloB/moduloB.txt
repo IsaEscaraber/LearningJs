@@ -53,3 +53,92 @@ E da para fazer muitos outros
 n1.toFixed(2).replace('.',',') // usado para alterar casas decimais e trocar ponto por virgula.
 n1.toFixed(4) // usado para alteração as casas decimais
 n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // we can change just the currency BRL, EUR, USD etc.
+
+OPERADORES
+- Aritmétricos
+- Atribuição
+- Relacionais
+- Lógicos
+- Ternário
+
+
+>> ARITMÉTRICOS
+5 + 2 = 7 (adição)
+5 - 2 = 3 (subtração)
+5 * 2 = 10 (miltiplacação)
+5 / 2 = 2.5 (divisão com resultado real com virgula)
+5 % 2 = 1 (resto da divição, quanto falta para dividir antes da virgula)
+5 ** 2 = 25 (5 ao quadrado)
+>> Ordem de precedência
+5 + 3 / 2 = 6.5 (primeiro divisão and mutiplicação)
+(5+3)/2 = 4 
+()
+**
+* / % (mesma ordem)
++ - (mesma ordem)
+
+
+>> ATRIBUIÇÃO
+>> Simples
+var a = 5 + 3 (8 o resultado fica guardado)
+var b = a % 5 (3)
+var c = 5 * b ** 2 (45)
+var d = 10 - a / 2 (6)
+var e = 6 * 2 / d (2)
+var f = b % e + 4 / e (3)
+Sempre seguindo a ordem de precedência dos sinais
+>> Auto-atribuição
+var n = 3
+n = n + 4 (7 pois n = 3+4)
+>> Simplificado
+n = n + 4 
+n += 4 (isso é usado apenas quando é calculado por ele mesmo) 
+>> Incremento
+var x = 5
+x = x + 1 (6)
+x += 1 (7 porque x passou a ser 6 na segunda linha)
+x ++ (8 porque x esta 7 mais 1)
+
+
+>> RELACIONAIS
+5 > 2 (true)
+7 < 4 (false)
+8 >= 8 (true)
+9 <= 7 (false)
+5 == 5 (true, sinal de igual)
+4 != 4 (false, sinal de diferente)
+var n = 8
+var x = 15
+n <= x - 10 (false, primeiro resolve a atribuição depois os relacionais)
+>> Identidade
+5 == 5 (true, mesmo valor)
+5 == '5' (true, mesmo valor mesmo sendo string, tipo diferente)
+5 === '5' (false, === é sinal de identico) 
+5 === 5 (true, são identicos tipo e valor)
+var n = 5
+var x = '5' 
+n != x (false, não são diferentes, são iguais)
+n !== x (true, são diferentes pois x é string)
+
+
+>> LÓGICOS
+! negação (true or false) (NÃO)
+&& conjunção (binário, se não for os dois true então o resultado é false) (E)
+true && true (true)
+true && false (false)
+false && false (true)
+false && false (false)
+|| disjunção (binário, precisa de pelo menos um true para ser true) (OU)
+true || true (true)
+true || false (true)
+false || true (true)
+false || false (false)
+var a = 5
+var b = 8
+a > b && b % 2 == 0 (false, a ordem é aritimétricos, relacionais e lógico (negação, conjunção e depois disjunçãp))
+
+
+>> TERNÁRIO
+teste ? true : false
+var média: 5.5
+média > 7? 'aprovado':'reprovado' (false, reprovado, média é menor que 7)
