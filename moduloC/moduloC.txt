@@ -1,3 +1,21 @@
 Modulo C - Undertending the DOM
 
-- DOM (Document Object Model)
+- DOM (Document Object Model) : javascript in the browser
+- Elemnts Arvore DOM
+  window
+    location - document - history
+      document > html
+        head - body
+          head > meta - title
+          body > h1 - p - p - div
+            p > strong
+
+You can select any Element to navigate it
+Selecionando
+- Methods
+Marca: comando >> getElementByTagName()
+ID >> getElementById()
+Nome >> getElementByName()
+Classe >> getElementByClassName()
+Seletor >> querySelect() or querySelectAll()
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First step with DOM</title>
+    <style>
+      body {
+        background-color: lightseagreen;
+        color: aliceblue;
+        font: normal 20pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Starting the DOM studies</h1>
+    <p>Here will go the results</p>
+    <p>Learning to use the <strong>DOM</strong> in Javascript.</p>
+    <div class="msg">Click on here</div>
+    <script>
+      var corpo = window.document.body;
+      var p1 = window.document.getElementsByTagName("p")[1]; //start counting at 0 ,1 ,2 ...
+      //document.write(p1.innerHTML); // print the full code, including the tag <strong>
+      // window.document.write("It is written like this: " + p1.innerText) Print only the text
+      // p1.style.color = "blue";
+      // corpo.style.background = "lightpink";
+      //var d = window.document.getElementById("msg");
+      //d.style.background = "yellow";
+      //d.style.color = "black";
+      //d.innerText = "I am waiting...";
+      //window.document.getElementById("msg").innerText = "I am waiting!";
+      //var d = window.document.getElementsByName("msg")[0];
+      //d.innerText = "Hello";
+      var d = window.document.querySelector("div.msg"); //we can change from class to id but the symbol will change as well, # or .
+      d.style.color = "black";
+      d.style.background = "lightpink";
+    </script>
+  </body>
+</html>
