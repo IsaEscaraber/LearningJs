@@ -7,34 +7,64 @@
     <style>
       body {
         font: normal 20px Arial;
+        background-color: rgb(37, 37, 37);
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+      }
+      main {
+        background-color: lightpink;
+        width: 300px;
+        height: 350px;
+        border-radius: 15px;
+        padding: 20px 20px 30px 20px;
+        text-align: center;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
       }
       input {
-        font: normal 20px Arial;
+        font: bold 20px Arial;
         width: 100px;
+        color: rgb(233, 0, 171);
+        border-radius: 5px;
       }
       #res {
         background-color: lightgreen;
-        width: 300px;
-        margin-top: 20px;
+        width: 250px;
+        padding: 20px;
+        margin: 20px auto 20px auto;
+        border-radius: 15px;
       }
     </style>
   </head>
   <body>
-    <h1>Calculating value</h1>
-    <input type="number" name="txtn1" id="txtn1" /> +
-    <input type="number" name="txtn2" id="txtn2" />
-    <input type="button" value="Counting" onclick="Counting()" />
-    <div id="res">Results</div>
-    <script>
-      function Counting() {
-        var tn1 = window.document.getElementById("txtn1");
-        var tn2 = window.document.querySelector("input#txtn2");
-        var res = window.document.getElementById("res");
-        var n1 = Number(tn1.value); // precisa converter porque no hmtl os valores são tratados como string, então precisa garantir que irá ser tratado como numero.
-        var n2 = Number(tn2.value); // Se não realiza a conversão, o js iria apenas concatenar ao inves de somar
-        var s = n1 + n2;
-        res.innerHTML = `The sum between ${n1} and ${n2} is equal <strong>${s}<strong/>`;
-      }
-    </script>
+    <main>
+      <h1>Calculating value</h1>
+      <input type="number" name="txtn1" id="txtn1" /> +
+      <input type="number" name="txtn2" id="txtn2" />
+      <p></p>
+      <input type="button" value="Counting" onclick="Counting()" />
+      <div id="res">Results</div>
+      <button id="reload">Again</button>
+      <script>
+        function Counting() {
+          var tn1 = window.document.getElementById("txtn1");
+          var tn2 = window.document.querySelector("input#txtn2");
+          var res = window.document.getElementById("res");
+          var n1 = Number(tn1.value); // precisa converter porque no hmtl os valores são tratados como string, então precisa garantir que irá ser tratado como numero.
+          var n2 = Number(tn2.value); // Se não realiza a conversão, o js iria apenas concatenar ao inves de somar
+          var s = n1 + n2;
+          res.innerHTML = `The sum between ${n1} and ${n2} is equal <strong>${s}<strong/>`;
+        }
+        function reload() {
+          var again = window.document.getElementById("reload");
+          again.addEventListener("click", function () {
+            location.reload();
+          });
+        }
+        reload(); // Nesse caso fica fora da função
+      </script>
+    </main>
   </body>
 </html>
