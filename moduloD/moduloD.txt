@@ -1,1 +1,25 @@
 Modulo D - Javascript Conditions
+
+>> Sequências para executar
+var n = 3
+n+=2
+window.alert(n)
+
+- Condições
+Em Conditions o fluxo pode ser interrompido por uma bifurcação e depois volta ao fluxo normal (desvio condicional)
+if(condição) {- tem dois lados de opções
+  true
+} else {
+  false
+}
+- Tipos de Condições
+Condição simples com apenas um bloco (um caminho)
+if (condição) {
+    true
+}
+com dois blocos (dois caminho)
+if(condição) {
+  true
+} else {
+  false
+}
