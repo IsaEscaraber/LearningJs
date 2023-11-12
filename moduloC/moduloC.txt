@@ -1,21 +1,35 @@
 Modulo C - Undertending the DOM
 
 - DOM (Document Object Model) : javascript in the browser
-- Elemnts Arvore DOM
+>> Elemnts Arvore DOM
   window
     location - document - history
       document > html
-        head - body
-          head > meta - title
-          body > h1 - p - p - div
-            p > strong
+        html
+         head - body
+           head > meta - title
+           body > h1 - p - p - div
+             p > strong
 
-You can select any Element to navigate it
+You can select any Element to navigate it.
 Selecionando
-- Methods
+
+>>  Methods
 Marca: comando >> getElementByTagName()
 ID >> getElementById()
 Nome >> getElementByName()
 Classe >> getElementByClassName()
 Seletor >> querySelect() or querySelectAll()
 
+>> Eventos
+-Exemplos:
+mouseenter
+mousemove
+mousedown
+mouseup
+click
+mouseout
+-Funções
+function ações (parametros) {
+  bloco
+}

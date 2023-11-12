@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counting Number</title>
+    <style>
+      body {
+        font: normal 20px Arial;
+      }
+      input {
+        font: normal 20px Arial;
+        width: 100px;
+      }
+      #res {
+        background-color: lightgreen;
+        width: 300px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculating value</h1>
+    <input type="number" name="txtn1" id="txtn1" /> +
+    <input type="number" name="txtn2" id="txtn2" />
+    <input type="button" value="Counting" onclick="Counting()" />
+    <div id="res">Results</div>
+    <script>
+      function Counting() {
+        var tn1 = window.document.getElementById("txtn1");
+        var tn2 = window.document.querySelector("input#txtn2");
+        var res = window.document.getElementById("res");
+        var n1 = Number(tn1.value); // precisa converter porque no hmtl os valores são tratados como string, então precisa garantir que irá ser tratado como numero.
+        var n2 = Number(tn2.value); // Se não realiza a conversão, o js iria apenas concatenar ao inves de somar
+        var s = n1 + n2;
+        res.innerHTML = `The sum between ${n1} and ${n2} is equal <strong>${s}<strong/>`;
+      }
+    </script>
+  </body>
+</html>
