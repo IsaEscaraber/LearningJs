@@ -13,13 +13,24 @@ if(condição) {- tem dois lados de opções
   false
 }
 - Tipos de Condições
-Condição simples com apenas um bloco (um caminho)
+Condição Simples com apenas um bloco (um caminho)
 if (condição) {
     true
 }
-com dois blocos (dois caminho)
+Condições Compostas com dois blocos (dois caminho)
 if(condição) {
   true
 } else {
   false
 }
+Condições Aninhadas com mais de dois blocos (Podendo ter uma condição dentro da outra)
+if(cond1) {
+  true (executa)
+} else {
+    if(condição) {
+    true
+    } else {
+    false
+    }
+}
+Condições Multipla
