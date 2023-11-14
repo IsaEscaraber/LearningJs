@@ -15,9 +15,14 @@ section {
   margin: 30px auto 30px auto;
   background-color: white;
   width: 500px;
-  height: 500px;
+  height: 350px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.283);
+}
+div {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
 }
 footer {
   color: white;
