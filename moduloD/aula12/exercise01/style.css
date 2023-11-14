@@ -4,13 +4,14 @@
 body {
   font: normal 24px Arial;
   background-color: rgb(3, 57, 86);
-  text-align: center;
 }
 header {
   margin-top: 30px;
   color: white;
+  text-align: center;
 }
 section {
+  padding: 30px;
   margin: 30px auto 30px auto;
   background-color: white;
   width: 500px;
@@ -21,4 +22,5 @@ section {
 footer {
   color: white;
   font-style: italic;
+  text-align: center;
 }
