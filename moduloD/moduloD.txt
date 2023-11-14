@@ -1,5 +1,8 @@
 Modulo D - Javascript Conditions
 
+Ctrl + Shift + ' (abrir o Node terminal)
+f8 (Usar o Node Exec)
+
 >> Sequências para executar
 var n = 3
 n+=2
