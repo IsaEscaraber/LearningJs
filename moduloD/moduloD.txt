@@ -33,4 +33,16 @@ if(cond1) {
     false
     }
 }
-Condições Multipla
+Condições Multipla com possibilidade de mais valores, valores fixos
+switch(espressão) {
+  case valor1:
+    bloco
+    break (obrigatório para testar a expressão)
+  case valor2:
+    bloco
+    break (obrigatório para testar a expressão)
+  case valor3:
+    bloco
+    break (obrigatório para testar a expressão)
+  default:
+}
