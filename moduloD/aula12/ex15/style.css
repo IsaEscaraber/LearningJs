@@ -19,6 +19,9 @@ section {
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.283);
 }
+div {
+  padding: 30px;
+}
 footer {
   color: white;
   font-style: italic;

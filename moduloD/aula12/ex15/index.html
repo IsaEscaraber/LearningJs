@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,13 +12,32 @@
     </header>
     <section>
       <div>
-        <!-- <p>Year of birth <input type="number" name="year" id="year" /></p> -->
+        <p>
+          Year of birth:
+          <input
+            type="number"
+            name="year"
+            id="txtyear"
+            min="0"
+            title="Enter your age"
+          />
+        </p>
+        <p>
+          Gender:
+          <input type="radio" name="radgender" id="mas" checked />
+          <label for="mas">Masculine</label>
+          <input type="radio" name="radgender" id="fem" />
+          <label for="fem">Feminine</label>
+        </p>
+        <p>
+          <input type="button" value="Verified" onclick="verified()" />
+        </p>
       </div>
-      <div></div>
+      <div id="res">Fill in the information above to see the results!</div>
     </section>
     <footer>
       <p>&copy; CursoemVideo</p>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
