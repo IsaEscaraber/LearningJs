@@ -20,17 +20,39 @@ section {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.283);
 }
 div {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
+}
+div#res {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
 }
 p {
   padding: 15px;
 }
+p#buttonVerified {
+  text-align: center;
+}
 input {
-  font: Bold 20px Arial;
   color: #0e0e5e;
+  font: Bold 20px Arial;
   text-align: center;
   border-radius: 5px;
 }
+input#button {
+  color: rgb(255, 255, 255);
+  background-color: #616cdb;
+  padding: 10px 60px;
+  border-radius: 25px;
+  border: 3px solid #616cdb;
+}
+input#button:hover {
+  color: black;
+  background-color: white;
+  border: 3px solid #3498db;
+}
+
 footer {
   color: white;
   font-style: italic;

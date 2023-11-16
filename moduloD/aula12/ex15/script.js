@@ -13,13 +13,47 @@ function verified() {
     var img = document.createElement("img");
     img.setAttribute("id", "photo");
     if (fgender[0].checked) {
-      gender = "Man";
+      gender = "Masculine person";
+      if (age >= 0 && age < 10) {
+        // kid
+        img.setAttribute("src", "image/boy.png");
+      } else if (age < 27) {
+        // yang
+        img.setAttribute("src", "image/yangman.png");
+      } else if (age < 65) {
+        // adult
+        img.setAttribute("src", "image/man.png");
+      } else if (age < 110) {
+        // old
+        img.setAttribute("src", "image/oldman.png");
+      } else {
+        // death
+        img.setAttribute("src", "image/morte.png");
+      }
+      console.log("img");
     } else if (fgender[1].checked) {
       //Não é necessary, pois já subentende-se que é woman the fgender[1], pois é o que restou.
-      gender = "Woman";
+      gender = "Feminine person";
+      if (age >= 0 && age < 10) {
+        // kid
+        img.setAttribute("src", "image/girl.png");
+      } else if (age < 27) {
+        // yang
+        img.setAttribute("src", "image/yangwoman.png");
+      } else if (age < 65) {
+        // adult
+        img.setAttribute("src", "image/woman.png");
+      } else if (age < 110) {
+        // old
+        img.setAttribute("src", "image/oldwoman.png");
+      } else {
+        // death
+        img.setAttribute("src", "image/morte.png");
+      }
     }
     res.style.color = "#0e0e5e";
     res.style.textAlign = "center";
-    res.innerHTML = `Detected the ${gender} with ${age} years old.`;
+    res.innerHTML = `Detected a ${gender} with about ${age} years old.`;
+    res.appendChild(img);
   }
 }
