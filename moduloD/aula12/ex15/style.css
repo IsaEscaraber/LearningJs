@@ -11,16 +11,25 @@ header {
   text-align: center;
 }
 section {
-  padding: 30px;
+  padding: 10px;
   margin: 30px auto 30px auto;
   background-color: white;
   width: 500px;
-  height: 500px;
+  /* height: 500px; */
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.283);
 }
 div {
-  padding: 30px;
+  padding: 20px;
+}
+p {
+  padding: 15px;
+}
+input {
+  font: Bold 20px Arial;
+  color: #0e0e5e;
+  text-align: center;
+  border-radius: 5px;
 }
 footer {
   color: white;
