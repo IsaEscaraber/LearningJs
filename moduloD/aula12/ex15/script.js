@@ -51,9 +51,10 @@ function verified() {
         img.setAttribute("src", "image/morte.png");
       }
     }
-    res.style.color = "#0e0e5e";
-    res.style.textAlign = "center";
+    // res.style.color = "#0e0e5e";
+    // res.style.textAlign = "center"; Adicionei esses styles a pasta correspondente pois fica mais organizado, porem da para setar as propriedades por aqui.
     res.innerHTML = `Detected a ${gender} with about ${age} years old.`;
+
     res.appendChild(img);
   }
 }

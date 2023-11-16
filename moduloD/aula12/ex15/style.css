@@ -26,7 +26,9 @@ div#res {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
+  padding: 20px;
+  color: #0e0e5e;
+  text-align: center;
 }
 p {
   padding: 15px;
@@ -51,6 +53,10 @@ input#button:hover {
   color: black;
   background-color: white;
   border: 3px solid #3498db;
+}
+
+img {
+  margin-top: 20px;
 }
 
 footer {
