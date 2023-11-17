@@ -1,1 +1,38 @@
 Modulo E - Javascript Repetitions
+
+Function eatPizza() {
+  eatSlice()
+  eatSlice()
+  eatSlice()
+  eatSlice()
+  eatSlice()
+  eatSlice()
+  eatSlice()
+  eatSlice()
+} // 8 Slice of pizza
+
+- Sequences
+- Conditions
+- Repetitions
+ >> Logical test at the beginning
+  Logical testing > execute > loop(while is true)
+  Follow a loop, if it is true, else go to the end.
+  while (condition) {
+    bloco
+  }
+If the while (enquanto) is true, will repeat, if else will go out to next.
+
+function eatPizza() {
+  while (haveSlice()) {
+      eatSlice
+  }
+} 
+//while you have Slice to eat, it will keep repeating until it finishes the pizza. When it eats all the Slices, the function will end automatically.
+In the other example, it would only eat the slices described, but in the second function it would eat until it had slices regardless of the number of pizza slices.
+
+>> Logical test at the end
+Execute > logic testing > loop(while is true)
+do {
+  bloco (true or false)
+} while (condition)
+//while the condition is true, will do (fazer) the block in looping
