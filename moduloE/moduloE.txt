@@ -12,27 +12,48 @@ Function eatPizza() {
 } // 8 Slice of pizza
 
 - Sequences
+
 - Conditions
+
 - Repetitions
  >> Logical test at the beginning
   Logical testing > execute > loop(while is true)
   Follow a loop, if it is true, else go to the end.
-  while (condition) {
+
+while (condition) {
     bloco
-  }
-If the while (enquanto) is true, will repeat, if else will go out to next.
+}//If the while (enquanto) is true, will repeat, if else will go out to next.
 
 function eatPizza() {
   while (haveSlice()) {
       eatSlice
   }
-} 
-//while you have Slice to eat, it will keep repeating until it finishes the pizza. When it eats all the Slices, the function will end automatically.
+}//while you have Slice to eat, it will keep repeating until it finishes the pizza. When it eats all the Slices, the function will end automatically.
 In the other example, it would only eat the slices described, but in the second function it would eat until it had slices regardless of the number of pizza slices.
 
 >> Logical test at the end
 Execute > logic testing > loop(while is true)
+
 do {
   bloco (true or false)
-} while (condition)
-//while the condition is true, will do (fazer) the block in looping
+}while (condition)
+//while the condition is true, will do (fazer) the block in looping.
+
+>> Repetitions with control variable
+Logical testing >> looping >
+
+for(beginning; test; increment) {
+   block
+}//if true will execute the block, after that will return to beginning, it will test again, to do the increment if true will start the loop again, if else will stop.
+
+var c = 1
+while (c <=10) {
+  block
+  c++
+}//while "c" is equal or smaller than 10, the function will keep executing and adding 1 more.
+
+for (var c=1; c<=10; c++){
+  block
+}// for and while have the same functionality.
+
+We can use Start Debugging to execute the function step by step, like a frame.
