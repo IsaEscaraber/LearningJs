@@ -15,9 +15,34 @@ section {
   margin: 30px auto 30px auto;
   background-color: white;
   width: 500px;
-  height: 500px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.283);
+}
+#generator {
+  /* background-color: yellow; */
+  padding: 10px;
+}
+#table {
+  /* background-color: yellowgreen; */
+  padding: 30px;
+}
+p input {
+  font: bold 20px Arial;
+  text-align: center;
+  width: 20%;
+  margin-right: 10px;
+}
+p input#button {
+  color: rgb(255, 255, 255);
+  background-color: #616cdb;
+  padding: 5px 30px;
+  border: 3px solid #616cdb;
+  width: 50%;
+}
+input#button:hover {
+  color: black;
+  background-color: white;
+  border: 3px solid #3498db;
 }
 footer {
   color: white;

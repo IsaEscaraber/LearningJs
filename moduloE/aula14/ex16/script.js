@@ -1,11 +1,18 @@
 function verified() {
-  var start = "";
-  var end = "";
+  var Start = Number(start.value);
+  var End = Number(end.value);
   var Step = Number(step.value);
+  var Emogis = document.querySelector("div#emogis");
 
   if (Step <= 0) {
     window.alert("teste");
-  } else {
-    window.alert("teste2");
+  }
+  if (Start <= null) {
+    Emogis.innerHTML = `Impossible to counting!`;
+  }
+
+  while (Start <= 5) {
+    Emogis.innerHTML = ``;
+    Start++;
   }
 }

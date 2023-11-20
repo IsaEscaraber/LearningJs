@@ -1,1 +1,3 @@
-var age = "";
+function generatorTable() {
+  var multiplicate = Number(Multiplicate.value);
+}
