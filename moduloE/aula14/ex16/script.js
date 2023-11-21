@@ -1,18 +1,15 @@
 function verified() {
-  var Start = Number(start.value);
-  var End = Number(end.value);
-  var Step = Number(step.value);
-  var Emogis = document.querySelector("div#emogis");
+  var startInput = parseInt(document.getElementById("start").value);
+  var endInput = parseInt(document.getElementById("end").value);
+  var stepInput = parseInt(document.getElementById("step").value);
 
-  if (Step <= 0) {
+  if (startInput <= 0 || endInput <= 0 || stepInput <= 0) {
     window.alert("teste");
-  }
-  if (Start <= null) {
-    Emogis.innerHTML = `Impossible to counting!`;
+    return;
   }
 
-  while (Start <= 5) {
-    Emogis.innerHTML = ``;
-    Start++;
+  var emojis = document.getElementById("emojis");
+  for (var count = startInput; count <= endInput; count += stepInput) {
+    emojis.innerText = count;
   }
 }

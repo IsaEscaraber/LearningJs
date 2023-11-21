@@ -19,16 +19,16 @@ section {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.283);
 }
 div#verification {
-  /* background-color: chartreuse; */
+  background-color: chartreuse;
   padding: 10px;
 }
-div#emogis {
-  /* background-color: coral; */
+div#emojis {
+  background-color: coral;
   padding: 10px;
 }
 div#buttonOut {
   text-align: center;
-  /* background-color: yellow; */
+  background-color: yellow;
   padding-top: 20px;
 }
 p {
@@ -38,14 +38,17 @@ p input {
   font: bold 20px Arial;
   text-align: center;
 }
-input#button {
+button#button {
+  font: bold 20px Arial;
+  text-align: center;
   color: rgb(255, 255, 255);
   background-color: #616cdb;
   padding: 10px 60px;
   border-radius: 25px;
   border: 3px solid #616cdb;
+  margin-bottom: 10px;
 }
-input#button:hover {
+button#button:hover {
   color: black;
   background-color: white;
   border: 3px solid #3498db;
