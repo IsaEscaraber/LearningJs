@@ -22,7 +22,7 @@ div#verification {
   background-color: chartreuse;
   padding: 10px;
 }
-div#emojis {
+div#res {
   background-color: coral;
   padding: 10px;
 }
@@ -38,7 +38,7 @@ p input {
   font: bold 20px Arial;
   text-align: center;
 }
-button#button {
+input#button {
   font: bold 20px Arial;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -48,7 +48,7 @@ button#button {
   border: 3px solid #616cdb;
   margin-bottom: 10px;
 }
-button#button:hover {
+input#button:hover {
   color: black;
   background-color: white;
   border: 3px solid #3498db;

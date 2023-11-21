@@ -1,15 +1,22 @@
-function verified() {
-  var startInput = parseInt(document.getElementById("start").value);
-  var endInput = parseInt(document.getElementById("end").value);
-  var stepInput = parseInt(document.getElementById("step").value);
+function counting() {
+  let startInput = document.getElementById("start");
+  let endInput = document.getElementById("end");
+  let stepInput = document.getElementById("step");
+  let res = document.getElementById("res");
 
-  if (startInput <= 0 || endInput <= 0 || stepInput <= 0) {
-    window.alert("teste");
-    return;
+  if (
+    startInput.value.length == 0 ||
+    endInput.value.length == 0 ||
+    stepInput.value.length == 0
+  ) {
+    window.alert("[ERROR] Missing data");
+  } else {
+    res.innerHTML = "Counting";
   }
 
-  var emojis = document.getElementById("emojis");
-  for (var count = startInput; count <= endInput; count += stepInput) {
-    emojis.innerText = count;
-  }
+  console.log(alert);
+  // var emojis = document.getElementById("res");
+  // for (var count = startInput; count <= endInput; count += stepInput) {
+  //   emojis.innerText = count;
+  // }
 }
