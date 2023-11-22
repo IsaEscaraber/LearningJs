@@ -1,10 +1,17 @@
 function generatorTable() {
-  var multiplicate = parseInt(document.getElementById("Multiplicate").value);
-  var res = document.getElementById("table");
-  var multiplicateTable = "";
-  for (var count = 1; count <= 10; count++)
-    `multiplicateTable += ${multiplicate}  "x" ${count} = ${multiplicate} * ${count} + <br/>;`;
+  let multiplicateNumber = document.getElementById("Multiplicate");
+  let res = document.getElementById("res");
 
-  res.innerHTML = multiplicateTable;
-  console.log("res");
+  if (multiplicateNumber.value.length == 0) {
+    window.alert("Error. Please enter a number");
+  } else {
+    res.innerHTML = "Multiplicate Table: <br>";
+    let stringToNumber = Number(multiplicateNumber.value);
+
+    for (let count = 1; count <= 10; count++) {
+      res.innerHTML += `${count} x ${stringToNumber} = ${
+        count * stringToNumber
+      } <br />`;
+    }
+  }
 }
