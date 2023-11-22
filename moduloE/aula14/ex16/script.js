@@ -11,7 +11,14 @@ function counting() {
   ) {
     window.alert("[ERROR] Missing data");
   } else {
-    res.innerHTML = "Counting";
+    res.innerHTML = "Counting: ";
+    let s = Number(startInput.value);
+    let e = Number(endInput.value);
+    let t = Number(stepInput.value);
+
+    for (let c = s; c <= e; c += t) {
+      res.innerHTML += `${c} `;
+    }
   }
 
   console.log(alert);
