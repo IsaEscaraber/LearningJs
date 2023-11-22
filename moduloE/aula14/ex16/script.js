@@ -20,14 +20,22 @@ function counting() {
     let t = Number(stepInput.value);
     // variaveis criadas para converter os valor inserido nos inputs para numeros e podemos realizar os calculos a seguir.
 
-    for (let c = s; c <= e; c += t) {
-      res.innerHTML += ` \u{1F449} ${c} `; // isso é o que sera escrito na tela se a função for verdadeira. Isto é, sera escrito o que esta na variavel "res", o emogi e o valor de "c".
+    if (s < e) {
+      //Se o valor inserido no input start for menor que o do end execute a função "for"
+      for (let c = s; c <= e; c += t) {
+        res.innerHTML += ` \u{1F449} ${c} `; // isso é o que sera escrito na tela se a função for verdadeira. Isto é, sera escrito o que esta na variavel "res", o emogi e o valor de "c".
+      }
+      // let c = s;
+      // while (c <= e) {
+      //   res.innerHTML += ` \u{1F449} ${c} `;
+      //   c += t;
+      // }
+      // Isso significa que a variavel let recebe o valor de "s" que é o valor inserido no input. A função vai continuar acontecendo enquanto o valor de "c" for menor ou igual ao valor de "e", ex: se o valor de "e" for 10, ele vai continuar acontecendo até chegar no 10. E "c += t" é o mesmo que "c = c + t", isso significa que sera somado com o "c" o valor inserido no input Step.
+    } else {
+      for (let c = s; c >= e; c -= t) {
+        res.innerHTML += ` \u{1F449} ${c} `;
+      } // essa condição foi feita para possibilitar a contagem de tras pra frente
     }
-    // let c = s;
-    // while (c <= e) {
-    //   res.innerHTML += ` \u{1F449} ${c} `;
-    //   c += t;
-    // }
-    // Isso significa que a variavel let recebe o valor de "s" que é o valor inserido no input. A função vai continuar acontecendo enquanto o valor de "c" for menor ou igual ao valor de "e", ex: se o valor de "e" for 10, ele vai continuar acontecendo até chegar no 10. E "c += t" é o mesmo que "c = c + t", isso significa que sera somado com o "c" o valor inserido no input Step.
+    res.innerHTML += ` \u{1F3C1}`; // Imprime um emoji de bandeira no ultimo numero assim que finaliza a função.
   }
 }
