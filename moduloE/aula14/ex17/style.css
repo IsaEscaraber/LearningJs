@@ -22,9 +22,10 @@ section {
   /* background-color: yellow; */
   padding: 10px;
 }
-#table {
+#res {
   /* background-color: yellowgreen; */
-  padding: 30px;
+  text-align: center;
+  padding-top: 30px;
 }
 p input {
   font: bold 20px Arial;
@@ -43,6 +44,18 @@ input#button:hover {
   color: black;
   background-color: white;
   border: 3px solid #3498db;
+}
+p#mT {
+  padding-bottom: 20px;
+}
+select {
+  font: normal 24px Arial;
+  background-color: rgb(1, 57, 74);
+  color: white;
+  width: 60%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
 }
 footer {
   color: white;
