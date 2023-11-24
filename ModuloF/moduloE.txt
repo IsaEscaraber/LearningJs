@@ -1,0 +1,11 @@
+Modulo F - Advancing studies in JS
+
+>> Simple variable can save just one value
+
+>> Composite variable can save more values
+Array is a vector in Portuguese, it is a compound variable, made up of elements, key and value of the content. The count always starts at zero.
+let num = [5,8,4]
+num = 5, 8, 4
+num - 0, 1, 2 ... The spaces is declared with this.
+So 5 is in the zero space, 8 in the 1 and 4 in the 2
+num[3] = 6 // This means that the space 3 will receive the value 6
