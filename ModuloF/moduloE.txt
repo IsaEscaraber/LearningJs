@@ -4,8 +4,30 @@ Modulo F - Advancing studies in JS
 
 >> Composite variable can save more values
 Array is a vector in Portuguese, it is a compound variable, made up of elements, key and value of the content. The count always starts at zero.
+
 let num = [5,8,4]
 num = 5, 8, 4
 num - 0, 1, 2 ... The spaces is declared with this.
 So 5 is in the zero space, 8 in the 1 and 4 in the 2
+
 num[3] = 6 // This means that the space 3 will receive the value 6
+num.push(7) // This means that the space 4 will receive the value 7 in the last position.
+num.length // this atribuite will counting the quantity of the elements I have. In this case the total is 5 and dont use () on js
+num.sort() // it will organize the sequence, it will be 
+num = 4 ,5, 6, 7, 8
+
+console.log(num[0])
+console.log(num[1])
+console.log(num[2])
+console.log(num[3])
+console.log(num[4])
+This the indexes is diffent
+
+Vector display path // Percurtion to exibiton of the vector
+for(let pos = 0; pos<num.length; pos++){
+  console.log(num[pos])
+} // The variable let is 0, which means it will initialize to 0 and the function will loop until the variable pos as long as the pos is smaller than num.lenght, that is, as long as it does not reach the end of the vector, which is its length, it will add one more.
+
+for(let pos in num) { // for each position within the num (Composite variable)
+  console.log(num[pos])
+}
