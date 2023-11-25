@@ -1,10 +1,5 @@
 # Learning Javascript Basic
 
-![js Image](image.png)
-
- <p align="center"><img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
-
 # Index
 
 - [Title and Cover Image](#Title-and-Cover-Image)
