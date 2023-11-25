@@ -31,3 +31,7 @@ for(let pos = 0; pos<num.length; pos++){
 for(let pos in num) { // for each position within the num (Composite variable)
   console.log(num[pos])
 }
+
+num = 4 ,5, 6, 7, 8
+num.indexOf(7) // It will search the position this value is, so 7 is in the 3 position
+num.indexOf(3) // As the value 3 has not position in the num variable, js will return -1, as for js it means that the value does not exist.
