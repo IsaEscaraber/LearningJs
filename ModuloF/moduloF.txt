@@ -35,3 +35,23 @@ for(let pos in num) { // for each position within the num (Composite variable)
 num = 4 ,5, 6, 7, 8
 num.indexOf(7) // It will search the position this value is, so 7 is in the 3 position
 num.indexOf(3) // As the value 3 has not position in the num variable, js will return -1, as for js it means that the value does not exist.
+
+>> JS functions
+- chamada
+- parâmetro
+- ação
+- retorno
+function ação(parâmetros){// inside the () is called parametros
+  return res //ação
+  //retoro
+}
+ação(5) //chamada
+
+function parimp(n){
+  if(n%2==0){
+    return 'par'
+  }else{
+    return 'impar'
+  }
+}
+let res = parimp(11)
