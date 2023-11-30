@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+}
+body {
+  text-align: center;
+  font: normal 24px Arial;
+  background-color: rgb(3, 57, 86);
+}
+header {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
+div {
+  padding: 10px 0px;
+}
+input {
+  color: #0e0e5e;
+  font: Bold 20px Arial;
+  text-align: center;
+  border-radius: 5px;
+}
+input#numberBetween {
+  width: 90px;
+  font-size: 24px;
+}
+input.buttonsPage {
+  margin: 20px 0px;
+  color: rgb(255, 255, 255);
+  background-color: #616cdb;
+  padding: 5px 60px;
+  border-radius: 15px;
+  border: 3px solid #616cdb;
+}
+input.buttonsPage:hover {
+  color: black;
+  background-color: white;
+  border: 3px solid #3498db;
+}
+select#boxAnalyze {
+  width: 200px;
+  height: 200px;
+  color: #0e0e5e;
+  padding: 10px;
+}
+section {
+  padding: 30px;
+  margin: 30px auto 30px auto;
+  background-color: white;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.283);
+}
+footer {
+  color: white;
+  font-style: italic;
+  text-align: center;
+}

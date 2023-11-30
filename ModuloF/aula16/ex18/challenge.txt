@@ -1,0 +1,22 @@
+ALERT
+ - if the input is empty
+ - if you repeat the number already entered
+ - if the number is less than 1 or greater than 100
+ - if the option box is empty and the finish button is pressed
+
+INPUT
+- After adding the new number, the information at the end will disappear
+
+OPTION BOX
+- it will add one below the other
+- it will be inside a option box
+- the information can be selected
+
+FINISH BUTTON
+- It will show all the information related to the above content
+- the quantity of numbers entered
+- the highest value reported
+- the lowest value reported
+- the sum of all the value entered
+- the average of the entered value
+- won't finish if the option box is empty

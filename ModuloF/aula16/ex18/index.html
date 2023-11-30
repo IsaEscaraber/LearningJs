@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyze numbers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Analyze numbers</h1>
+    </header>
+    <section>
+      <div>
+        <p>
+          Number (between 1 and 100):
+          <input
+            type="number"
+            name="numberBetween"
+            id="numberBetween"
+            title="enter a number"
+          />
+          <input
+            class="buttonsPage"
+            type="button"
+            value="Add"
+            onclick="analyzeNum()"
+          />
+        </p>
+      </div>
+      <div>
+        <select name="box" id="boxAnalyze" title="Analyze box">
+          <!-- <option value="values">empty</option> -->
+        </select>
+        <p>
+          <input
+            class="buttonsPage"
+            type="button"
+            value="Finish"
+            onclick="finishValue()"
+          />
+        </p>
+      </div>
+      <div id="res">
+        <p>Fill in the information above to see the results!</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; CursoemVideo</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
