@@ -65,7 +65,7 @@ OPERADORES
 >> ARITMÉTRICOS
 5 + 2 = 7 (adição)
 5 - 2 = 3 (subtração)
-5 * 2 = 10 (miltiplacação)
+5 * 2 = 10 (multiplacação)
 5 / 2 = 2.5 (divisão com resultado real com virgula)
 5 % 2 = 1 (resto da divição, quanto falta para dividir antes da virgula)
 5 ** 2 = 25 (5 ao quadrado)
