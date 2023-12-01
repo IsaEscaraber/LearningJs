@@ -118,8 +118,8 @@ n <= x - 10 (false, primeiro resolve a atribuição depois os relacionais)
 var n = 5
 var x = '5' 
 n != x (false, não são diferentes, são iguais)
-n !== x (true, são diferentes pois x é string)
 
+n !== x (true, são diferentes pois x é string)
 
 >> LÓGICOS
 ! negação (true or false) (NÃO)
