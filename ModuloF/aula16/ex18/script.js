@@ -22,7 +22,7 @@ function analyzeNum() {
 }
 function finishValue() {
   let boxValue = document.getElementById("boxAnalyze");
-  if (boxValue.value.length == 0) {
+  if (valueArray.value.length == 0) {
     window.alert("ERRO,");
   } else {
     values.innerHTML = `It will show all the information related to the above content`;
