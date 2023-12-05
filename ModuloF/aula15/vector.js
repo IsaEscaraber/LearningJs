@@ -11,13 +11,12 @@ console.log(values[5])
 */
 
 //console.log(values);
-/*
-for(let pos = 0; pos < values.length; pos++) {
+
+for (let pos = 0; pos != values.length; pos++) {
   console.log(`The position ${pos} has the value ${values[pos]}`);
 }
-*/
 
 //console.log(values);
-for (let pos in values) {
-  console.log(`The position ${pos} has the value ${values[pos]}`);
-}
+// for (let pos in values) {
+//   console.log(`The position ${pos} has the value ${values[pos]}`);
+// }

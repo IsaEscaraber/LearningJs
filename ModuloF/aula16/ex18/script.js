@@ -1,6 +1,6 @@
 let valueArray = [];
+let inputValue = document.getElementById("numberBetween");
 function analyzeNum() {
-  let inputValue = document.getElementById("numberBetween");
   let boxValue = document.getElementById("boxAnalyze");
 
   if (
@@ -12,11 +12,12 @@ function analyzeNum() {
   } else {
     function addValue() {
       valueArray.push(inputValue.value);
-
-      let values = document.createElement("option");
-      values.text = `Value ${valueArray(inputValue.value)} added`;
-      boxValue.appendChild(values);
-      return;
+      for (let pos = inputValue; pos != valueArray.value; pos++) {
+        let values = document.createElement("option");
+        values.text = `Value ${valueArray[pos]} added`;
+        boxValue.appendChild(values);
+        return;
+      }
     }
     addValue();
   }
@@ -27,7 +28,7 @@ function finishValue() {
   if (valueArray.length == 0) {
     window.alert("ERRO, it is empty!");
   } else {
-    window.alert("ok,");
-    detail.innerHTML = `It will show all the information related to the above content`;
+    detailBelow.innerHTML = `It will show all the information related to the above content`;
+    detailB = valueArray.indexOf(1);
   }
 }
