@@ -14,7 +14,7 @@ function analyzeNum() {
       valueArray.push(inputValue.value);
 
       let values = document.createElement("option");
-      values.text = `Value ${valueArray} added`;
+      values.text = `Value ${valueArray(inputValue.value)} added`;
       boxValue.appendChild(values);
       return;
     }
@@ -24,7 +24,7 @@ function analyzeNum() {
 function finishValue() {
   let detailBelow = document.getElementById("detail");
   let boxValue = document.getElementById("boxAnalyze");
-  if (valueArray.value.length == 0) {
+  if (valueArray.length == 0) {
     window.alert("ERRO, it is empty!");
   } else {
     window.alert("ok,");
