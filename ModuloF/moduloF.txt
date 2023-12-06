@@ -76,3 +76,17 @@ let res = parimp(11)
 - Ajax
 - NodeJS
 
+>> Objects
+-- array
+let num = [ , , ]
+let num = [5, 8, 4]
+num
+| 5 | 8 | 4 |
+  0   1   2
+
+-- objects
+let amigo = { , , }
+let amigo = {nome:'José', sexo:'M',peso:85.4, engordar(p){}}
+amigo
+|José | M | 85.4| [function]
+nome  sexo  peso  engordar()
