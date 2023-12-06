@@ -40,14 +40,20 @@ function finishValue() {
     let total = valueArray.length;
     let high = valueArray[0];
     let smaller = valueArray[0];
+    let sum = 0;
+    let media = 0;
+
     for (let position in valueArray) {
+      sum += valueArray[position];
       if (valueArray[position] > high) high = valueArray[position];
       if (valueArray[position] < smaller) smaller = valueArray[position];
     }
-
+    media = sum / total;
     detailBelow.innerHTML = ``;
     detailBelow.innerHTML += `<P> In total, we have ${total} registered numbers.</p>`;
-    detailBelow.innerHTML += `<P> The highest value reported was ${high}</p>`;
-    detailBelow.innerHTML += `<P> The smallest value reported was ${smaller}</p>`;
+    detailBelow.innerHTML += `<P> The highest value reported was ${high}.</p>`;
+    detailBelow.innerHTML += `<P> The smallest value reported was ${smaller}.</p>`;
+    detailBelow.innerHTML += `<P> Adding all the values together, the result is  ${sum}.</p>`;
+    detailBelow.innerHTML += `<P> The average of all the above values is ${media}.</p>`;
   }
 }
