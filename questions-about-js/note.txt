@@ -17,7 +17,7 @@ This happend because the JS will search until to find one variable even if it is
 
 var | let | const
 
-- var 
+-- var 
   it has the function scope
 var name = 'Danilo';
 function returnName() {
@@ -30,7 +30,7 @@ Because the scope the the var Danilo is global, that is the some of the console.
 And the var Isadora is the local scope.
 About if a use the returnNome(); to call the function, it will return Isadora, because it is in the same scope and it did not need to up to the above scope to search for one variable because already found in the local scope.
 
-- var 
+--  var 
   redeclaração
 var name = 'Danilo'
 var name = 'Isadora'
@@ -47,7 +47,7 @@ console.log(name);
 "Isadora"
 It happens because the variable was change the value from Danilo to Isadora in the scope function.
 
-- var
+-- var
   hoinsting
 console.log(name);
 var name = 'Isadora';
@@ -74,3 +74,26 @@ If (1+1===2) {
 console.log(name);
 "Danilo"
 let can't be accessed bacause was inside a local scope, and the console was outside, in the global scope.
+
+-- let
+Only can execute inside the one scope.
+And the value can be changed
+let name = 'Isadora';
+name = 'Danilo';
+console.log(name)
+"Danilo"
+
+-- const
+Can't be update the value. One time that value, always will be the same value.
+But the property value can be change.
+const people = {
+  name: 'Isadora'
+  surname: 'Miranda'
+}
+people 
+{name: "Isadora", surname: "Miranda"}
+people.name = 'Danilo'
+"Danilo"
+people
+{name: "Danilo, surname: "Miranda"}
+  
