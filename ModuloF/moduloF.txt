@@ -55,3 +55,24 @@ function parimp(n){
   }
 }
 let res = parimp(11)
+
+>> What learned
+- Fundamentos
+- Variaveis e dados
+- Operadores
+- Condições
+- Repetições
+- Arrays
+- Funções
+- DOM
+
+>> Next steps
+- functions
+- Fundamentos avançados
+- Objetos
+- Modularização
+- RegEX
+- Json
+- Ajax
+- NodeJS
+
