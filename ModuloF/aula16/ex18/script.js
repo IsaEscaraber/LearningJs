@@ -3,33 +3,51 @@ let boxValue = document.querySelector("select#boxAnalyze");
 let detailBelow = document.querySelector("div#detail");
 let valueArray = [];
 
-function analyzeNum() {
-  if (
-    isNum(inputValue.value) && !inList(inputValue.value)
-    inputValue.value > 100 ||
-    inputValue.value < 1 ||
-    inputValue.value.length == 0
-  ) {
-    window.alert("ERRO, incorret value!");
+function isNum(n) {
+  if (Number(n) >= 1 && Number(n) <= 100) {
+    return true;
+    // inputValue.value.length == 0
   } else {
-    function addValue() {
-      valueArray.push(inputValue.value);
-      for (let pos = inputValue; pos != valueArray.value; pos++) {
-        let values = document.createElement("option");
-        values.text = `Value ${valueArray} added`;
-        boxValue.appendChild(values);
-        return;
-      }
-    }
-    addValue();
+    return false;
   }
 }
-function finishValue() {
-  let boxValue = document.getElementById("boxAnalyze");
-  if (valueArray.length == 0) {
-    window.alert("ERRO, it is empty!");
+function inList(n, l) {
+  if (l.indexOf(Number(n)) != -1) {
+    return true;
   } else {
-    detailBelow.innerHTML = `It will show all the information related to the above content`;
-    detailB = valueArray.indexOf(1);
+    return false;
+  }
+}
+function analyzeNum() {
+  if (isNum(inputValue.value) && !inList(inputValue.value, valueArray)) {
+    //Se o valor do input for numero e se NÃO estiver na varivel do input e nem na array, add um numero na array e apareça no select
+    valueArray.push(Number(inputValue.value));
+    let values = document.createElement("option");
+    values.text = `Value ${inputValue.value} added`;
+    boxValue.appendChild(values);
+    detailBelow.innerHTML = "";
+  } else {
+    window.alert("ERRO, incorret value OR already added!");
+  }
+  inputValue.value = ""; // Serve para esvaziar o input
+  inputValue.focus(); // Serve para o ponteiro voltar ao input
+}
+
+function finishValue() {
+  if (valueArray.length == 0) {
+    window.alert("ERRO, it is empty! Add values before to finish.");
+  } else {
+    let total = valueArray.length;
+    let high = valueArray[0];
+    let smaller = valueArray[0];
+    for (let position in valueArray) {
+      if (valueArray[position] > high) high = valueArray[position];
+      if (valueArray[position] < smaller) smaller = valueArray[position];
+    }
+
+    detailBelow.innerHTML = ``;
+    detailBelow.innerHTML += `<P> In total, we have ${total} registered numbers.</p>`;
+    detailBelow.innerHTML += `<P> The highest value reported was ${high}</p>`;
+    detailBelow.innerHTML += `<P> The smallest value reported was ${smaller}</p>`;
   }
 }

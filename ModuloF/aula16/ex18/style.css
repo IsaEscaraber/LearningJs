@@ -53,6 +53,10 @@ section {
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.283);
 }
+div p#principalP {
+  color: #0e0e5e;
+}
+
 footer {
   color: white;
   font-style: italic;
