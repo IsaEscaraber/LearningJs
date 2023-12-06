@@ -1,0 +1,76 @@
+Escopo
+- Local
+- Global 
+
+var name = 'Isadora'
+console.log(name)
+"Isadora"
+All of this is in the some spoce, that is global.
+
+var name = 'Isadora'
+function returnName() {
+  return name;
+}
+returnName();
+"Isadora"
+This happend because the JS will search until to find one variable even if it is outside of the function. it will just stop to search for one variable when it find one. And if it does not have, it will return a Error.
+
+var | let | const
+
+- var 
+  it has the function scope
+var name = 'Danilo';
+function returnName() {
+  var name = 'Isadora';
+  return name;
+}
+console.log(name);
+"Danilo"
+Because the scope the the var Danilo is global, that is the some of the console.log
+And the var Isadora is the local scope.
+About if a use the returnNome(); to call the function, it will return Isadora, because it is in the same scope and it did not need to up to the above scope to search for one variable because already found in the local scope.
+
+- var 
+  redeclaração
+var name = 'Danilo'
+var name = 'Isadora'
+console.log(name);
+"Isadora"
+Because even if to change the value of the variable but keep the same name, it will always keep the last one.
+var name = 'Danilo';
+function returnName(){
+  name = 'Isadora';
+  return name;
+}
+returnName();
+console.log(name);
+"Isadora"
+It happens because the variable was change the value from Danilo to Isadora in the scope function.
+
+- var
+  hoinsting
+console.log(name);
+var name = 'Isadora';
+Undefined
+because the console was before the variable declaration
+var name;
+console.log(name);
+name = 'Isadora'
+console.log(name);
+"Isadora"
+It happend bacause the variable was not declared on the top of the code and it is on the bottom of the code. So the bottom var will change the value of the first var declared on the top.
+The type is, ALWAYS DECLARED VAREABLES ON THE CODE TOP.
+var name = 'Danilo';
+If (1+1===2) {
+  var name = 'Isadora';
+}
+console.log(name);
+"Isadora"
+The var changed the value bacause it consider the last value informed
+var name = 'Danilo';
+If (1+1===2) {
+  let name = 'Isadora';
+}
+console.log(name);
+"Danilo"
+let can't be accessed bacause was inside a local scope, and the console was outside, in the global scope.
