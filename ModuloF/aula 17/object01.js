@@ -7,4 +7,5 @@ let friend = {
     this.weight += p;
   },
 };
-console.log(`${friend.name} weighs ${friend.weight}`);
+friend.fatten(2);
+console.log(`${friend.name} weighs ${friend.weight} KG`);
