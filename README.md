@@ -53,4 +53,4 @@ JavaScript language course, aimed at beginners and for anyone who wants to learn
 
 # 🤝 Contributors
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/8683378?v=4" width=115><br><sub>Prof. Gustavo
+<img loading="lazy" src="https://avatars.githubusercontent.com/u/8683378?v=4" width=115><br><sub>Prof. Gustavo
